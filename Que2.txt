@@ -1,0 +1,6 @@
+The error occured was index error and it will be handle like this.
+l=[1,2,3]
+try:
+    print(l[3])
+except IndexError as message:
+    print(message)
