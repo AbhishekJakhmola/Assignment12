@@ -1,0 +1,27 @@
+while 1:
+
+    try:
+
+        try:
+
+            x=int(input("Enter a age:"))
+
+            if x<18:
+
+                print("Age is less than 18.")
+
+            else:
+
+                break
+
+        except ValueError as exp:
+
+            print("ValueError -- ",exp)
+
+            raise AgeTooSmallError("Zero Division ") from exp
+
+    except  AgeTooSmallError as exp:
+
+            print("MyException",exp)
+
+            print(exp.__cause__)
