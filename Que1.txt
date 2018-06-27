@@ -1,0 +1,14 @@
+The exception is divide by zero and it will be handle like this.
+a=3
+
+if a<4:
+
+    try:
+
+        a=a/(a-3)
+
+        print(a)
+
+    except ZeroDivisionError as message:
+
+        print(message)
