@@ -1,0 +1,25 @@
+try:
+
+    x=int(input("Enter a index value:"))
+
+except ValueError as message:
+
+    print(message)
+l=[1,2,3]
+
+try:
+
+    print(l[x])
+
+except IndexError as message:
+
+    print(message)
+
+try:
+
+    from _foo import *
+
+except ImportError as message:
+
+    print(message)
+    
